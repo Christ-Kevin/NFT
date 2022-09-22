@@ -1,0 +1,135 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    /* space */
+    min-height: 100vh;
+    margin: 0 auto;
+    /* font and color */
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem;
+    /* 18px */
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*position: relative;*/
+}
+
+/*############################################################*/
+/* container */
+
+.container {
+    /* size */
+    max-width: 330px;
+    /* space */
+    padding: 2rem;
+    margin: 0 auto;
+    /* color and border */
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.125rem 0.563rem hsl(216deg 50% 10%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*####################*/
+.image-parent {
+    /* position */
+    position: relative;
+    /*width: 100%;*/
+    border-radius: inherit;
+    cursor: pointer;
+    display: flex;
+}
+
+.equilibrium{
+    width: 100%;
+        height: auto;
+        border-radius: inherit;    
+}
+
+.image-parent .eye-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    rigth: 0;
+    bottom: 0;
+    background-color: rgba(0, 255, 247, .4);
+    border-radius: inherit;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items:  center;
+    transition: opacity 1s .2s;
+}
+
+.eye {
+    background-image: url('../images/icon-view.svg');    
+    width: 3rem;
+    height: 2.5rem;
+}
+
+.image-parent:hover .eye-parent {
+    opacity: 1; /*dsdddsd*/
+}
+
+.wrapper-title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.wrapper-description {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.time-diamond {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid;
+    padding-bottom: 1rem;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.avatar-description {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.avatar-description img {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.footer {
+    font-size: 0.75rem;
+}
